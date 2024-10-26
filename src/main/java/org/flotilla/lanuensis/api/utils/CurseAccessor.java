@@ -36,4 +36,16 @@ public class CurseAccessor {
                 .toString());
     }
 
+    public static String searchBySlug(String slug) throws IOException {
+        return getResponse(CUrl.of("/v1/mods/search")
+                .addArg("gameId", MINECRAFT)
+                .addArg("categoryId", MC_MODS)
+                .addArg("slug", slug)
+                .toString());
+    }
+
+    public static String searchById(long id) throws IOException {
+        return getResponse(CUrl.of(String.format("/v1/mods/%s", id)).toString());
+    }
+
 }
