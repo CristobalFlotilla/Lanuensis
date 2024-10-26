@@ -23,9 +23,16 @@ repositories {
     }
     maven {url 'https://maven.blamejared.com'}
     maven {url 'https://maven.gtceu.com'}
+    maven {
+        url 'http://maven.snowlyicewolf.club/'
+        allowInsecureProtocol = true
+    }
     mavenLocal() // Must be last for caching to work
 }
 
 dependencies {
     implementation rfg.deobf("com.cleanroommc:modularui:2.5.0-rc1")
+
+    embed 'org.apache.httpcomponents.client5:httpclient5:5.4'
+    embed 'club.someoneice.json:amarok-json-for-java:1.7.3'
 }
