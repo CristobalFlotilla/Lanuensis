@@ -1,0 +1,1 @@
+Use `.toml` to compatible `MultiMC` launchers.

@@ -1,0 +1,20 @@
+filename = 'Jar Name'
+name = 'Mod Name'
+side = ' client / server / both '
+
+[download]
+hash = 'hash'
+hash-format = 'sha1'
+mode = 'metadata:any'
+
+[update.curseforge]
+file-id = 1
+project-id = 2
+
+[update.modrinth]
+file-id = 1
+project-id = 2
+
+[update.url]
+url = ''
+version = '0.0.1'

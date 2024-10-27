@@ -35,4 +35,8 @@ dependencies {
 
     embed 'org.apache.httpcomponents.client5:httpclient5:5.4'
     embed 'club.someoneice.json:amarok-json-for-java:1.7.3'
+    embed 'com.moandjiezana.toml:toml4j:0.7.2'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
 }

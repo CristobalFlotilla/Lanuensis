@@ -1,0 +1,25 @@
+{
+  "filename": "Jar Name",
+  "name": "Mod Name",
+  "modid": "Modid",
+  "version": "0.0.1",
+  "side": "client / server / both",
+  "download": {
+    "hash": "hash",
+    "format": "sha1",
+    "mode": "metadata:any"
+  },
+  "update": {
+    "curse": {
+      "project": 1,
+      "file": 2
+    },
+    "modrinth": {
+      "project": 1,
+      "version": 2
+    },
+    "url": {
+      "url": ""
+    }
+  }
+}

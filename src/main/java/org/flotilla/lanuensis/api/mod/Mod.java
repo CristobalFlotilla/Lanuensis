@@ -1,17 +1,13 @@
 package org.flotilla.lanuensis.api.mod;
 
-import org.flotilla.lanuensis.api.download.IDownload;
+import lombok.AllArgsConstructor;
+import org.flotilla.lanuensis.api.download.IUpdate;
 
+import java.util.Map;
+
+@AllArgsConstructor
 public class Mod {
-
-    public final String modid, name, version;
-
-    public String fileName;
-    public IDownload download;
-
-    public Mod(String modid, String name, String version) {
-        this.modid = modid;
-        this.name = name;
-        this.version = version;
-    }
+    public String filename, name, modid, version, side;
+    public Map<String, String> download;
+    public Map<String, IUpdate> update;
 }
